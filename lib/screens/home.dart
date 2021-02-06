@@ -8,18 +8,14 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
         padding: EdgeInsets.all(20),
         decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("images/bg.png"), 
-            fit: BoxFit.fitWidth,
-            alignment: Alignment.topLeft
-          ),
+          image:
+              DecorationImage(image: AssetImage("images/bg.png"), fit: BoxFit.fitWidth, alignment: Alignment.topLeft),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -34,9 +30,8 @@ class _HomeState extends State<Home> {
             )
             //Sandbox(),
           ],
-        )
-      )
+        ),
+      ),
     );
   }
 }
-
